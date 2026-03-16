@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Phishing Detected</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+text-align:center;
+margin-top:80px;
+}
+
+.card{
+background:#7f1d1d;
+width:550px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.6);
+}
+
+.warning{
+font-size:90px;
+animation:pulse 1.2s infinite;
+}
+
+h1{
+color:#f87171;
+}
+
+ul{
+text-align:left;
+display:inline-block;
+margin-top:20px;
+}
+
+button{
+margin-top:30px;
+padding:12px 25px;
+background:#ef4444;
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="warning">⚠</div>
+
+<h1>Phishing Website Detected</h1>
+
+<p><b>URL:</b> {{url}}</p>
+
+<h3>Confidence: {{score}}</h3>
+
+<h2>Do NOT open this link</h2>
+
+<ul>
+<li>This site may steal passwords</li>
+<li>Do not enter banking details</li>
+<li>Close the website immediately</li>
+</ul>
+
+<br>
+
+<a href="/">
+<button>Scan Another URL</button>
+</a>
+
+</div>
+
+</body>
+</html>
